@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Екатерина Жуковская — Web Designer & UI/UX Creator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="header-left">
+            <span class="role-tag">WEB DESIGNER</span>
+            <span class="role-tag">DIGITAL CREATOR</span>
+        </div>
+        <div class="header-right">
+            <span class="status-tag">AVAILABLE FOR FREELANCE</span>
+            <span class="status-dot"></span>
+        </div>
+    </header>
+
+    <main class="hero">
+        
+        <!-- Огромная надпись -->
+        <!-- SVG растягивает текст ровно на 100% ширины экрана (textLength + spacingAndGlyphs) -->
+        <div class="bg-text" aria-hidden="true">
+            <svg viewBox="0 0 1000 260" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                <text x="0" y="250" textLength="1000" lengthAdjust="spacingAndGlyphs">DESIGNER</text>
+            </svg>
+        </div>
+
+        <!-- Твое фото (только один тег img, никаких фонов) -->
+        <div class="portrait-container">
+            <!-- ВАЖНО: Файл должен называться person.png и лежать в этой же папке! -->
+            <img src="sticker.jpg" alt="Екатерина Жуковская" class="portrait-img" id="main-portrait">
+        </div>
+
+        <!-- Текстовый блок слева -->
+        <div class="hero-content">
+            <p class="greeting">Привет, я</p>
+            <h1 class="hero-title" id="main-name">ЕКАТЕРИНА<br>ЖУКОВСКАЯ</h1>
+            <p class="hero-role">WEB DESIGNER & UI/UX CREATOR</p>
+            <p class="hero-desc">
+                Создаю современный дизайн, сочетая эстетику, продуманный UX и внимание к деталям.
+            </p>
+            <div class="bottom-actions">
+                <a href="#" class="cta-btn">Связаться со мной</a>
+            </div>
+        </div>
+
+        <!-- Статистика справа -->
+        <div class="hero-stats">
+            <div class="stat-item">
+                <span class="stat-number">3+</span>
+                <span class="stat-label">ГОДА<br>ОПЫТА</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">50+</span>
+                <span class="stat-label">ПРОЕКТОВ<br>ЗАВЕРШЕНО</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">25+</span>
+                <span class="stat-label">СЧАСТЛИВЫХ<br>КЛИЕНТОВ</span>
+            </div>
+        </div>
+
+    </main>
+
+</body>
+</html>
